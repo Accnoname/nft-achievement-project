@@ -1,0 +1,13 @@
+[project]
+name = "counter"
+description = ""
+authors = []
+telemetry = true
+cache_dir = "./.cache"
+
+[contracts.nft-achievement]
+path = "contracts/nft-achievement.clar"
+
+[repl.analysis]
+passes = ["check_checker"]
+check_checker = { trusted_sender = false, trusted_caller = false, callee_filter = false }
